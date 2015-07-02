@@ -1,0 +1,21 @@
+{
+	"name":"alefrichard/curso_phpoop",
+	"description":"Framework do curso de php Orientado a Objetos",
+	"minimum-stability":"stable",
+	"authors":[
+			{
+				"name": "Alef Richard",
+				"email": "alefrichard@live.com"
+			}
+	],
+	"name": "",
+	"autoload":{
+		"psr-0": {
+			"Core": "src",
+			"Application": "src"
+		}
+	},
+	"require": {
+		"php": ">=5.5.0"
+	}
+}
