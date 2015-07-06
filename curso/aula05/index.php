@@ -12,13 +12,10 @@ $BancoConfig = new Application\Config\BancoDeDados();
 $BancoDeDados = new Core\BancoDeDados\BancoDeDados($BancoConfig->db);
 
 $pdo = $BancoDeDados->conecta();
-
-$select = $pdo->prepare('SELECT * FROM usuarios WHERE nome = :nome;');
-$select->bindValue(':nome', $_GET['nome']);
-$select->execute();
-$dados = $select->fetchAll(PDO::FETCH_ASSOC);
-//$dados = $select->fetch(PDO::FETCH_ASSOC);
+$data = $BancoDeDados->executa();
 ?>
+
+
 <pre>
-	<?php print_r($dados);?>
+	<?php print_r($data);?>
 </pre>
