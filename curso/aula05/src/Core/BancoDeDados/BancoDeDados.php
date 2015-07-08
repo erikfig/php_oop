@@ -15,7 +15,7 @@ class BancoDeDados
 	public function conecta()
 	{
 		$this->pdo = new \PDO(
-			'mysql:host='.$this->config['servidor'].'dbname='.$this->config['banco'],
+			echo 'mysql:host='.$this->config['servidor'].'dbname='.$this->config['banco'],
 			$this->config['usuario'],
 			$this->config['senha'],
 			$this->config['options']
